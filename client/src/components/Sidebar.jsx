@@ -1,11 +1,13 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import assets, { userDummyData } from '../assets/assets.js'
 import { useNavigate } from 'react-router-dom'
+import { AuthContext } from '../../context/AuthContext.jsx';
 
 const Sidebar = ({ selectedUser, setSelectedUser }) => {
 
    const navigate = useNavigate();
    const [open, setOpen] = useState(false);
+   const {logout} = useContext(AuthContext)
 
 
    return (
@@ -21,7 +23,7 @@ const Sidebar = ({ selectedUser, setSelectedUser }) => {
              bg-[#282142] border border-gray-600 text-gray-100 ${open ? 'block' : 'hidden'}` }>
                      <p onClick={() => navigate('/profile')} className='cursor-pointer text-sm'>Edit Profile</p>
                      <hr className='my-2 border-t border-gray-500' />
-                     <p className='cursor-pointer text-sm'>Logout</p>
+                     <p onClick={() => logout()} className='cursor-pointer text-sm'>Logout</p>
                   </div>
                </div>
             </div>
