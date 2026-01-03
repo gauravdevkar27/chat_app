@@ -1,6 +1,8 @@
 import React from 'react'
-import assets, { imagesDummyData } from '../assets/assets'
+import assets, { imagesDummyData } from '../assets/assets.js'
+
 const RightSidebar = ({ selectedUser }) => {
+  
   return selectedUser && (
     <div className={`bg-[#8185B2]/10 text-white w-full relative overflow-y-scroll ${selectedUser ? "max-md:hidden" : ""}`}>
 

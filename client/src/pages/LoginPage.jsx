@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react'
-import assets from '../assets/assets'
-import { AuthContext } from '../../context/AuthContext'
+import assets from '../assets/assets.js'
+import { AuthContext } from '../../context/AuthContext.jsx'
 
 const LoginPage = () => {
 
@@ -56,7 +56,7 @@ const LoginPage = () => {
         {
           currState === "Sign up" && isDataSubmitted && (
             <textarea onChange={(e) => setBio(e.target.value)} value={bio} rows={4} className='p-2 border border-gray-500 rounded-md
-          focus:outline-none focus:ring-2 foucs:ring-indigo-500'
+          focus:outline-none focus:ring-2 focus:ring-indigo-500'
               placeholder='provide a short bio...' required></textarea>
           )
         }
@@ -78,7 +78,7 @@ const LoginPage = () => {
             </p>
           ) : (
             <p className='text-sm text-gray-600'>Create an account
-              <span onClick={() => setCurrState("Sign up")} className='font-medium text-violet-500 cursor-pointer'>Clik here</span>
+              <span onClick={() => setCurrState("Sign up")} className='font-medium text-violet-500 cursor-pointer'>Click here</span>
             </p>
           )
           }
