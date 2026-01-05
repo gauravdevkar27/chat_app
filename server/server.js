@@ -41,6 +41,7 @@ app.use(express.json({limit: "50mb"}));
 app.use(cors());
 
 // Routes setup
+app.get('/', (req, res) => res.send("Server is Live!"))
 app.use("/api/status", (req, res) => res.send("server is live"));
 app.use("/api/auth", userRouter)
 app.use("/api/messages", messageRouter)
