@@ -1,9 +1,10 @@
 💬 Real-Time Chat Application
 A full-stack, responsive chat platform that enables users to communicate instantly through text and media. Built with Socket.io for low-latency, bi-directional communication.
 
-https://quick-gpt-ydkw.onrender.com
+🌐 Live Demo Click here to view the live project on Render https://quick-gpt-ydkw.onrender.com
 
 🚀 Features
+
 Real-Time Messaging: Instant text delivery using WebSockets.
 
 Media Sharing: Send and receive photos seamlessly.
@@ -16,7 +17,9 @@ Dynamic Rooms: Support for multiple chat rooms or private 1-on-1 messaging.
 
 Optimistic UI Updates: Messages appear instantly on the sender's screen for a smooth user experience.
 
+
 🛠️ Tech Stack
+
 Frontend
 React + Vite: For a fast, modern UI development experience.
 
@@ -31,7 +34,9 @@ Socket.io: To handle the real-time event-based communication.
 
 Base64: (Mention whichever you used) for handling image uploads and processing.
 
+
 🏗️ How It Works
+
 The application utilizes a Client-Server-Client architecture.
 
 Connection: When a user opens the app, a handshake is performed between the Vite frontend and the Node.js backend to establish a persistent WebSocket connection.
@@ -42,6 +47,7 @@ Broadcasting: The server receives the data and "broadcasts" it to the specific r
 
 Binary Handling: Photos are processed as binary data or base64 strings, ensuring they are delivered without needing a traditional page refresh.
 
+
 ⚙️ Installation & Setup
 
 Clone the repository:
@@ -49,6 +55,7 @@ Clone the repository:
 Bash
 
 git clone https://github.com/gauravdevkar27/chat_app.git
+
 Install dependencies for both Client and Server:
 
 Bash
